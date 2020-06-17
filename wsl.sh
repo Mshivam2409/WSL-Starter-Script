@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 sudo apt update -y
 sudo apt install python -y
 sudo apt install build-essential apt-transport-https lsb-release ca-certificates curl -y
@@ -23,6 +23,7 @@ sudo python get-pip.py
 sudo apt-get install python-dev -y 
 pip install notebook
 pip install scikit-learn matplotlib pandas numpy seaborn
+pip install nltk==3.0
 sudo apt install libnss3-dev -y
 sudo apt install -y libgdk-pixbuf2.0-0
 sudo apt install -y libgtk-3-0
@@ -40,5 +41,7 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 EOF
-npm install -g typescript
+sudo npm install -g typescript
 source ~/.bashrc
+sudo npm install -g react-native-cli
+sudo apt install -y x11-apps
