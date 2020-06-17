@@ -1,0 +1,13 @@
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension eg2.vscode-npm-script
+code --install-extension EQuimper.react-native-react-redux
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-python.python
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.cpptools
+code --install-extension mushan.vscode-paste-image
+code --install-extension PKief.material-icon-theme
+code --install-extension puorc.awesome-vhdl
+code --install-extension sdras.night-owl
+code --install-extension vscodevim.vim
