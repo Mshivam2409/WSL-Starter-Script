@@ -24,6 +24,7 @@ sudo apt-get install python-dev -y
 pip install notebook
 pip install scikit-learn matplotlib pandas numpy seaborn
 pip install nltk==3.0
+sudo apt install python-gtk -y
 sudo apt install libnss3-dev -y
 sudo apt install -y libgdk-pixbuf2.0-0
 sudo apt install -y libgtk-3-0
