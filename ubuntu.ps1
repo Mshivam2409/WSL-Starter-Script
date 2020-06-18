@@ -1,0 +1,8 @@
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+curl.exe -L -o ubuntu-2004.appx https://aka.ms/wsl-ubuntu-2004
+Rename-Item ubuntu-2004.appx ubuntu-2004.zip
+Expand-Archive ubuntu-2004.zip ubuntu
+$userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
+[System.Environment]::SetEnvironmentVariable("PATH", $userenv + (get-location) + "\ubuntu", "User")
+.\ubuntu\ubuntu2004.exe
