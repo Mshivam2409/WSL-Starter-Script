@@ -1,4 +1,4 @@
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 curl.exe -L -o ubuntu-2004.appx https://aka.ms/wsl-ubuntu-2004
 Rename-Item ubuntu-2004.appx ubuntu-2004.zip
