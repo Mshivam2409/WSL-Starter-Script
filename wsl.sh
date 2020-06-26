@@ -46,3 +46,6 @@ sudo npm install -g typescript
 source ~/.bashrc
 sudo npm install -g react-native-cli
 sudo apt install -y x11-apps
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
